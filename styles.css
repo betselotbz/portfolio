@@ -1,0 +1,27 @@
+body {
+background-color: hwb(206 66% 25% / 0.819);
+margin: 0
+}
+.intro {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}       
+.hello {
+   
+}
+.header-bar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 100px;
+    display: flex;
+}
+.header {
+    text-decoration: none;
+    color: red;
+    display: inline-block;
+    padding: 10px;
+    display: flex;
+}
