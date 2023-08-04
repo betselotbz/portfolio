@@ -1,5 +1,5 @@
 body {
-  background-color: hwb(206 66% 25% / 0.819);
+  background-color: hwb(213 43% 40% / 0.407);
   margin: 0;
 }
 
@@ -16,6 +16,14 @@ body {
   margin: 0;
   margin-right: 100px;
   display: flex;
+}
+p {
+  font-size: 16px;
+  color: #333;
+  float: right;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 300;
 }
 .header {
   text-decoration: none;
@@ -46,26 +54,48 @@ img {
 section {
   padding: 40px;
   height: 400px;
+  align-items: center;
 }
 section h1 {
   font-size: 40px;
 }
 section h2 {
   font-size: 28px;
-  padding: 80px;
   display: flex;
 }
 
 /* Styling for the Home section */
 #home {
   text-align: center;
+  
 }
 
 /* Styling for the About section */
 #about {
   background-color: #fff;
+  display: grid;
 }
-
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+.about-content h2 {
+    font-size: 28px;
+    margin-right: 20px;
+  }
+  
+  .about-content p {
+    max-width: 368px; /* Adjust the max-width value as per your preference */
+    margin: 0 auto; /* This centers the paragraph content within the container */
+  }
+  .about-right {
+    width: 50%;
+  }
+  
 /* Styling for the Resume section */
 #resume {
   background-color: #f9f9f9;
