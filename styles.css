@@ -96,11 +96,11 @@ section h2 {
   margin: 0 auto;
   float: right;
 }
-.skill-content {
-    max-width: 368px; /* Adjust the max-width value as per your preference */
-    margin: 0 auto;
-    float: left;
-  }
+.skills-content {
+  max-width: 368px; /* Adjust the max-width value as per your preference */
+  margin: 0 auto;
+  float: left;
+}
 
 /* Styling for the Contact section */
 #contact {
