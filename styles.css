@@ -1,6 +1,8 @@
 body {
-  background-color: hwb(213 43% 40% / 0.407);
-  margin: 0;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+
 }
 
 .intro {
@@ -21,13 +23,19 @@ body {
   margin: 0;
   margin-right: 100px;
   display: flex;
+  color: black;
 }
-
+.main-header {
+  background-color: rgba(215, 153, 164, 0.76);
+  padding: 20px;
+  /*background-color: #cba1a8;*/
+}
 .header {
   text-decoration: none;
   display: inline-block;
   padding: 10px;
   display: flex;
+  height: ;
 }
 .header a:hover {
   text-decoration: underline;
@@ -45,14 +53,39 @@ body {
 .description {
   display: flex;
 }
-img {
-  width: 422px;
-  height: 278px;
+
+
+.image-container {
+  display: flex;
+  width: 350px; /* Adjust the container width as needed */
+  height: 350px; /* Match the container height with the width to make it circular */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: auto; /* Center the circular container horizontally on the page */
+  position: absolute;
 }
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text within the container */
+}
+
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+
+  object-fit: cover; /* This ensures the image covers the entire container while maintaining its aspect ratio */
+}
+
+
 section {
   padding: 40px;
-  height: 400px;
+  height: 80px;
   align-items: center;
+  height: 123px;
 }
 section h1 {
   font-size: 40px;
@@ -67,44 +100,234 @@ section h2 {
   text-align: center;
 }
 
-/* Styling for the About section */
-#about {
-  background-color: #fff;
+section#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 120px;
+  position: relative;
 }
 
-.about-me-p {
-  max-width: 368px; /* Adjust the max-width value as per your preference */
-  margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-size: large;
-}
-.about-content-p {
-  max-width: 368px; /* Adjust the max-width value as per your preference */
-  margin: 0 auto; /* This centers the paragraph content within the container */
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-size: large;
+.About-Me-Title {
+  flex: display;
+  flex-direction: column;
 }
 
-/* Styling for the Resume section */
-#skills {
-  background-color: #bac89e;
-}
-.skills-content {
-  max-width: 368px; /* Adjust the max-width value as per your preference */
-  margin: 0 auto;
-  float: right;
-}
-.skills-content {
-  max-width: 368px; /* Adjust the max-width value as per your preference */
-  margin: 0 auto;
-  float: left;
+.about-me {
+  flex: 1; /* Allow the "About Me" content to grow and take available space */
+  margin: 119px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  background-color: rgba(215, 153, 164, 0.76);
+  border: ; /* Add a red border */
+  border-radius: 10px; /* Add rounded corners for a box effect */
+  text-align: center;
+
+
 }
 
-/* Styling for the Contact section */
+/* Style the "About Me" section content */
+.about-me h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-content: flex-start;
+  flex-direction: row;
+}
+
+.about-me p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Choose a suitable font-family */
+  font-size: 24px; /* Adjust as needed for readability and style */
+  line-height: 1.5; /* Adjust line height for readability */
+  margin: 0; /* Reset default margin for paragraphs */
+  padding: 10px; /* Add padding for spacing */
+}
+
+/* Update styles for .short-description with typing animation */
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 60ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  color: black; /* Change text color to black */
+  margin-left: 220px;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.wrapper {
+  height: 200vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+body {
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+#projects {
+  padding: 40px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center projects horizontally */
+  gap: 10px; /* Reduce the gap between projects */
+}
+
+.project {
+  flex: 1 1 calc(50% - 10px); /* Adjust the width calculation and add margin */
+  max-width: 400px;
+  height: 300px;
+  background-color: rgba(215, 153, 164, 0.76);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.project h3 {
+  margin-top: 10px;
+}
+
+/* Add your existing styles above this */
+body {
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Choose a suitable font-family */
+}
+
 #contact {
-  background-color: #e0e0e0;
-  height: 20px;
-  color: rgb(63, 150, 29);
+  padding: 40px;
 }
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#contact li i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+#contact a {
+  color: #4CAF50; /* Green color for links, you can change it to your preference */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #45a049; /* Darker green color on hover */
+}
+
+
+/* Add your existing styles below this */
+
+/* ... Other styles ... */
+
+
+
+
+
+
+/*.image-container {*/
+/*  width: 150px;*/
+/*  height: 150px;*/
+/*  border-radius: 50%;*/
+/*  overflow: hidden;*/
+/*  box-sizing: border-box; !* Add this line *!*/
+/*}*/
+
+
+/*.image-container {*/
+/*  width: 350px;*/
+/*  height: auto;*/
+/*  border-radius: 50%;*/
+/*  overflow: hidden;*/
+/*  margin-right: 20px; !* Adjust the margin as needed for spacing *!*/
+/*}*/
+
+/*.image-container img {*/
+/*  max-width: 100%;*/
+/*  max-height: 100%;*/
+/*  display: block;*/
+/*  object-fit: cover;*/
+/*}*/
+
+
+/*!* Styling for the Resume section *!*/
+/*#skills {*/
+/*  background-color: #bac89e;*/
+/*}*/
+/*.skills-content {*/
+/*  max-width: 368px; !* Adjust the max-width value as per your preference *!*/
+/*  margin: 0 auto;*/
+/*  float: right;*/
+/*}*/
+/*.skills-content {*/
+/*  max-width: 368px; !* Adjust the max-width value as per your preference *!*/
+/*  margin: 0 auto;*/
+/*  float: left;*/
+/*}*/
+
+/*!* Styling for the Contact section *!*/
+/*#contact {*/
+/*  background-color: #e0e0e0;*/
+/*  height: 20px;*/
+/*  color: rgb(63, 150, 29);*/
+/*}*/
