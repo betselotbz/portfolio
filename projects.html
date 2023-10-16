@@ -4,37 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<body >
 <header class = "main-header">
-    <nav>
-        <ul class="header-bar">
-            <li class="header"><a href="index.html">Home</a></li>
-            <li class="header"><a href="about.html">About</a></li>
-            <li class="header"><a href="projects.html">Projects</a></li>
-            <li class="header"><a href="contact.html">Contact</a></li>
-
-        </ul>
-    </nav>
+    <a href="./index.html">
+        <div class="logo">
+            <img src="Logo.webp" alt="Your Logo">
+        </div>
+    </a>
+    <div class="header-container">
+        <nav>
+            <ul class="header-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
-<!-- Add content for the About page -->
+
 <main>
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-container">
             <div class="project">
                 <img src="https://user-images.githubusercontent.com/141344995/262211247-54d1ac02-2b59-4d0c-a475-099f53eac05e.png" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1 goes here.</p>
+                <a href="https://github.com/betselotbz/tictactoe" class="project-link">
+                    <h3>Tic-Tac-Toe</h3>
+                </a>
+                <p>Developing a dynamic Tic Tac Toe game with clean code, turn-switching functionality, and visual feedback for game outcomes using HTML, CSS, and JavaScript, deployed on GitHub Pages.</p>
             </div>
             <div class="project">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of Project 2 goes here.</p>
+
+                <img src="Rock-Paper-Scissors-Img.png" alt="Project 2">
+                <a href="https://github.com/betselotbz/Rock-Paper-Scissors" class="project-link">
+                <h3>Rock-Paper-Scissors</h3>
+                </a>
+                <p> Implemented a Java-based Rock, Paper, Scissors game featuring a console-driven interface, player vs. computer and player vs. player modes, and object-oriented design principles.</p>
             </div>
-            <!-- Add more project items as needed -->
+
+            <div class="project">
+
+                <img src="Library.png" alt="Project 2">
+                <a href="https://github.com/betselotbz/Library" class="project-link">
+                <h3>Library</h3>
+                </a>
+                <p>Java Spring Boot backend project for a library system with CRUD operations, authentication using Spring Security and JWT, and organized using Controller-Service pattern.</p>
+            </div>
+            <div class="project">
+
+                <img src="Music Streaming Service .png" alt="Project 3">
+                <a href="https://github.com/GabrielleHandy/Music_Streaming_API" class="project-link">
+                <h3>Music Streaming Service</h3>
+                </a>
+                <p> A collaborative project featuring a monolithic backend using Spring Boot, implementing user profiles, music categorization, personalized playlists, and secure authentication with Spring Security and JWT tokens.</p>
+            </div>
+
         </div>
     </section>
 </main>

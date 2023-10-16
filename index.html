@@ -5,48 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-<!--  <script src="script.js"></script>-->
-<!--  <meta http-equiv="refresh" content="5;url=about.html">-->
+
 </head>
 <body >
 <header class = "main-header">
-  <nav>
-    <ul class="header-bar">
-      <li class="header"><a href="index.html">Home</a></li>
-      <li class="header"><a href="about.html">About</a></li>
-      <li class="header"><a href="projects.html">Projects</a></li>
-      <li class="header"><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <a href="./index.html">
+    <div class="logo">
+      <img src="Logo.webp" alt="Your Logo">
+    </div>
+  </a>
+  <div class="header-container">
+    <nav>
+      <ul class="header-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main>
   <section id="about">
+    <div class = "about-container">
+
     <div class="image-container">
       <img src="Profile.jpg" alt="Portfolio Image">
     </div>
-
-  </section>
-  <p class=" typing-demo">
-  Hello, my name is Betselot Bezabeh. Welcome to my portfolio!
-  </p>
-
-
-  <!-- Add more sections for portfolio, resume, and projects as needed -->
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <footer>
-      <a href="mailto:betselotbz@gmail.com">Email</a> |
-      <a href="https://www.linkedin.com/in/betselot-bezabeh-94643420a/">LinkedIn</a>
-    </footer>
-    <!-- Add your contact information or a contact form here -->
+    </div>
+    <div class = "typing-demo"></div>
+    <p class=" typing-demo">
+      Hello, my name is Betselot Bezabeh. Welcome to my portfolio!
+    </p>
+    <div class="footer">
+        <a href="https://github.com/" target="_blank">
+          <img src="Github Icon.png" alt="Github Logo" class="footer-logo">
+        </a>  <a href="https://www.linkedin.com/in/betselot-bezabeh-94643420a/" target="_blank">
+          <img src="Linkedin-logo.jpeg" alt="Linkedin Logo" class="footer-logo">
+        </a>
+    </div>
   </section>
 
 </main>
-<p>
-  <span id="typing-text"></span>
-</p>
 
 </body>
 </html>

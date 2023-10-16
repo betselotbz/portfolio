@@ -4,31 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
-    <!-- Include Font Awesome CSS (you can get this link from the Font Awesome website) -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<header class="main-header">
-    <nav>
-        <ul class="header-bar">
-            <li class="header"><a href="index.html">Home</a></li>
-            <li class="header"><a href="about.html">About</a></li>
-            <li class="header"><a href="projects.html">Projects</a></li>
-            <li class="header"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<header class = "main-header">
+    <a href="./index.html">
+        <div class="logo">
+            <img src="Logo.webp" alt="Your Logo">
+        </div>
+    </a>
+    <div class="header-container">
+        <nav>
+            <ul class="header-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<!-- Add content for the Contact page -->
 <section id="contact">
     <h2>Contact Me</h2>
     <p>Feel free to reach out to me. You can contact me via email or connect with me on LinkedIn.</p>
 
     <ul>
-        <li><i class="fas fa-envelope"></i><a href="mailto:your-email@example.com">betselotbz-email@example.com</a></li>
+        <li><i class="fas fa-envelope"></i><a href="mailto:your-email@example.com">betselotbz@gmail.com</a></li>
         <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/your-linkedin-profile">LinkedIn Profile</a></li>
     </ul>
 </section>
+<form
+        action="https://formspree.io/f/mrgwrakl"
+        method="POST"
+>
+    <label>
+        <input type="email" name="email">
+    </label>
+    <label>
+        <textarea name="message"></textarea>
+    </label>
+
+    <button type="submit">Send</button>
+</form>
 </body>
 </html>

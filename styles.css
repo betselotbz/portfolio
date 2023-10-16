@@ -16,30 +16,66 @@ body {
   margin-left: 40px;
   margin-right: 40px;
 }
+.main-header {
+  background-color: rgba(215, 153, 164, 0.76);
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  padding-right: 75px;
+  padding-left: 50px;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  margin-right: 20px;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
 
 .header-bar {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-right: 100px;
   display: flex;
-  color: black;
+
+  padding-left: 20px;
 }
-.main-header {
-  background-color: rgba(215, 153, 164, 0.76);
-  padding: 20px;
-  /*background-color: #cba1a8;*/
+
+.header-container {
+  margin-left: auto;
 }
-.header {
+
+.header-bar a {
   text-decoration: none;
-  display: inline-block;
-  padding: 10px;
-  display: flex;
-  height: ;
+  color: white;
+  font-weight: bold;
 }
+
+.header-bar li {
+  padding: 30px;
+}
+
 .header a:hover {
-  text-decoration: underline;
+
 }
+.header-bar li.header a {
+  text-decoration: none;
+}
+
+
 .Name {
   display: flex;
   justify-content: center;
@@ -57,27 +93,25 @@ body {
 
 .image-container {
   display: flex;
-  width: 350px; /* Adjust the container width as needed */
-  height: 350px; /* Match the container height with the width to make it circular */
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: auto; /* Center the circular container horizontally on the page */
-  position: absolute;
+
 }
 .about-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  text-align: center; /* Center text within the container */
+  align-items: center;
+  text-align: center;
 }
 
-
 .image-container img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-
-  object-fit: cover; /* This ensures the image covers the entire container while maintaining its aspect ratio */
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 
@@ -95,66 +129,51 @@ section h2 {
   display: flex;
 }
 
-/* Styling for the Home section */
 #home {
   text-align: center;
 }
-
-section#about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 120px;
-  position: relative;
-}
-
-.About-Me-Title {
-  flex: display;
-  flex-direction: column;
-}
-
-.about-me {
-  flex: 1; /* Allow the "About Me" content to grow and take available space */
-  margin: 119px;
-  padding: 28px;
+#about-me {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  z-index: 0;
-  background-color: rgba(215, 153, 164, 0.76);
-  border: ; /* Add a red border */
-  border-radius: 10px; /* Add rounded corners for a box effect */
-  text-align: center;
-
-
 }
 
-/* Style the "About Me" section content */
-.about-me h2 {
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.text-content {
+  max-width: 600px;
+  padding: 20px;
+  padding-bottom: 100px;
+
+}
+.text-content p {
+  color: black;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.text-content li {
+  color: black;
+  font-size: 20px;
+  line-height: 1.5;
+}
+#About-Me-Title {
   font-size: 30px;
   margin-bottom: 10px;
-  justify-content: center;
-  align-content: flex-start;
-  flex-direction: row;
+  line-height: 1.5;
 }
 
-.about-me p {
-  font-size: 20px;
-  line-height: 1.4;
-  margin: 0;
-  font-family: 'Arial', sans-serif; /* Choose a suitable font-family */
-  font-size: 24px; /* Adjust as needed for readability and style */
-  line-height: 1.5; /* Adjust line height for readability */
-  margin: 0; /* Reset default margin for paragraphs */
-  padding: 10px; /* Add padding for spacing */
-}
-
-/* Update styles for .short-description with typing animation */
 .wrapper {
   height: 100vh;
-  /*This part is important for centering*/
   display: grid;
   place-items: center;
 }
@@ -167,10 +186,14 @@ section#about {
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
-  color: black; /* Change text color to black */
+  color: black;
   margin-left: 220px;
+  margin-top: 50px;
 }
-
+#contact-home {
+display: flex;
+  justify-content: center;
+}
 
 @keyframes typing {
   from {
@@ -186,7 +209,6 @@ section#about {
 
 .wrapper {
   height: 200vh;
-  /*This part is important for centering*/
   display: grid;
   place-items: center;
 }
@@ -202,35 +224,65 @@ body {
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center projects horizontally */
-  gap: 10px; /* Reduce the gap between projects */
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
 }
 
 .project {
-  flex: 1 1 calc(50% - 10px); /* Adjust the width calculation and add margin */
+  flex: 1 1 calc(50% - 10px);
   max-width: 400px;
-  height: 300px;
+  height: 410px;
   background-color: rgba(215, 153, 164, 0.76);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+  color: white;
+  line-height: 1.5;
+  font-weight: bold;
 }
 
 .project img {
   max-width: 100%;
   border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  width: 393px;
+  height: 232px;
+}
+.project2  {
+
+}
+.project-link {
+  text-decoration: none;
 }
 
 .project h3 {
   margin-top: 10px;
+  color: #ff0000;
+  text-decoration: none !important;
+}
+.project h3:hover {
+  color: rgb(155, 22, 22);
 }
 
-/* Add your existing styles above this */
+.footer-logo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 109px;
+}
 body {
-  color: whitesmoke;
+  color: rgb(173 34 59 / 76%);
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif; /* Choose a suitable font-family */
+
 }
 
 #contact {
@@ -266,68 +318,62 @@ body {
 }
 
 #contact a {
-  color: #4CAF50; /* Green color for links, you can change it to your preference */
+  color:#cba1a8;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 #contact a:hover {
-  color: #45a049; /* Darker green color on hover */
+  color: #45a049;
+}
+
+form {
+  max-width: 600px;
+  margin: 78px auto;
+  padding: 85px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }
 
 
-/* Add your existing styles below this */
+ul li i {
+  margin-right: 8px;
+}
 
-/* ... Other styles ... */
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  object-fit: cover;
+}
 
-
-
-
-
-
-/*.image-container {*/
-/*  width: 150px;*/
-/*  height: 150px;*/
-/*  border-radius: 50%;*/
-/*  overflow: hidden;*/
-/*  box-sizing: border-box; !* Add this line *!*/
-/*}*/
-
-
-/*.image-container {*/
-/*  width: 350px;*/
-/*  height: auto;*/
-/*  border-radius: 50%;*/
-/*  overflow: hidden;*/
-/*  margin-right: 20px; !* Adjust the margin as needed for spacing *!*/
-/*}*/
-
-/*.image-container img {*/
-/*  max-width: 100%;*/
-/*  max-height: 100%;*/
-/*  display: block;*/
-/*  object-fit: cover;*/
-/*}*/
-
-
-/*!* Styling for the Resume section *!*/
-/*#skills {*/
-/*  background-color: #bac89e;*/
-/*}*/
-/*.skills-content {*/
-/*  max-width: 368px; !* Adjust the max-width value as per your preference *!*/
-/*  margin: 0 auto;*/
-/*  float: right;*/
-/*}*/
-/*.skills-content {*/
-/*  max-width: 368px; !* Adjust the max-width value as per your preference *!*/
-/*  margin: 0 auto;*/
-/*  float: left;*/
-/*}*/
-
-/*!* Styling for the Contact section *!*/
-/*#contact {*/
-/*  background-color: #e0e0e0;*/
-/*  height: 20px;*/
-/*  color: rgb(63, 150, 29);*/
-/*}*/
